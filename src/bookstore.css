@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffe6f0, #e6f0ff, #f0e6ff);
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  grid-column: span 2;
+  text-align: center;
+  color: #6a4caf;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.book-list li, .wishlist-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.book-image, .wishlist-image {
+  width: 60px;
+  height: 80px;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: #aaa;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-btn {
+  background: #9b6df0;
+  color: white;
+}
+
+.delete-btn {
+  background: #f28b82;
+  color: white;
+}
+
+.wishlist-btn {
+  background: #fbbc04;
+  color: white;
+}
+
+.clear-btn {
+  background: #ffb6c1;
+  color: white;
+}
+
+.total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #6a4caf;
+}
